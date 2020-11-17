@@ -1,0 +1,29 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts.scss';
+
+/* @import 'base/var.scss';
+@import 'base/mixins.scss'; */
+
+:root {
+    --f-color: #EE076E;
+    --text-color: rgba(29, 29, 36, 0.75);
+}
+
+* {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header.scss';
+@import 'blocks/button.scss';
+@import 'blocks/services.scss';
+@import 'blocks/about.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/footer.scss';
+
+@import 'blocks/media.scss';

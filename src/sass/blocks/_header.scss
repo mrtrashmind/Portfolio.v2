@@ -1,0 +1,97 @@
+.header {
+    min-height: 100vh;
+    background: url('../img/promobackground1.jpg') no-repeat 50%/cover;
+
+    padding: 35px 100px 150px 100px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 53px;
+    }
+    &__menu {
+        display: grid;
+        grid-template-columns: 663px 183px;
+        column-gap: 60px;
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            margin: 0;
+        }
+        &-item {
+            list-style-type: none;
+            a {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1;
+
+                color: #c6c9d8;
+                text-decoration: none;
+                transition: all 0.3s;
+                &:hover {
+                    color: #7154F8;
+                }
+            }
+        }
+    }
+    nav {
+        align-self: center;
+    }
+    
+    &__title {
+        &_h1 {
+            display: inline-block;
+
+            padding-top: 150px;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(-259deg, #7154F8 0, #ee076e 100%);
+            background-size: 250%;
+
+            font-family: 'Montserrat', sans-serif;
+            font-size: 125px;
+            font-weight: 900;
+            line-height: 130px;
+
+            animation: colors 10s infinite cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            @keyframes colors {
+                0% {
+                    background-position: 0 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0 50%;
+                }
+            }
+        }
+    }
+    &__features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 50px;
+
+        margin-top: 141px;
+        &-title {
+            margin-top: 20px;
+
+            color: #c6c9d8;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 35px;
+        }
+        &-subtitle {
+            margin-top: 6px;
+
+            color: #c6c9d8;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+//Montserrat
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    src: local('Montserrat'),
+        url('../fonts/Montserrat.ttf') format('ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+//Jost
+@font-face {
+    font-family: 'Jost';
+    font-display: swap;
+    src: local('Jost-Light'),
+        url('../fonts/Jost-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost';
+    font-display: swap;
+    src: local('Jost-Regular'),
+        url('../fonts/Jost-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost';
+    font-display: swap;
+    src: local('Jost-Medium'),
+        url('../fonts/Jost-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost';
+    font-display: swap;
+    src: local('Jost-SemiBold'),
+        url('../fonts/Jost-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
