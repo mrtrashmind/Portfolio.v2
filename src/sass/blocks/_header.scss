@@ -10,9 +10,12 @@
 
         height: 53px;
     }
+    nav {
+        align-self: center;
+    }
     &__menu {
         display: grid;
-        grid-template-columns: 663px 183px;
+        grid-template-columns: 481px 186px;
         column-gap: 60px;
         &-list {
             display: flex;
@@ -37,10 +40,9 @@
             }
         }
     }
-    nav {
-        align-self: center;
+    .hamburger {
+        display: none;
     }
-    
     &__title {
         &_h1 {
             display: inline-block;
@@ -55,7 +57,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 125px;
             font-weight: 900;
-            line-height: 130px;
+            line-height: 1.1em;
 
             animation: colors 10s infinite cubic-bezier(0.1, 0.7, 1.0, 0.1);
             @keyframes colors {

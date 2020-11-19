@@ -21,8 +21,6 @@
         color: var(--text-color);
     }
     &__list {
-        position: relative;
-
         margin-top: 109px;
     }
     &__item {
@@ -57,7 +55,7 @@
         }
         &-img {
             width: 797px;
-            height: 804px;
+            height: auto;
             position: absolute;
             right: 0;
             top: 124px;
@@ -75,9 +73,6 @@
                     &-title {
                         text-align: right;
                         padding-right: 7%;
-                        &_pr {
-                            padding-right: 24%;
-                        }
                     }
                     &-wrapper {
                         padding-left: 51%;

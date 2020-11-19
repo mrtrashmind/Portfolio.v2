@@ -1,0 +1,198 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header {
+        &__wrapper {
+            svg {
+                width: 220px;
+            }
+        }
+        &__menu {
+            position: relative;
+
+            grid-template-columns: 122px 186px;
+            column-gap: 30px;
+            &-list {
+                position: fixed;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                top: 0;
+                left: -100%;
+
+                width: 26%;
+                height: 100vh;
+
+                padding: 180px 15px;
+
+                background-color: rgba(0,0,0,.8);
+
+                transition: .6s;
+                z-index: 4;
+                &_active {
+                    left: 0;
+                }
+            }
+        }
+        .hamburger {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            grid-column: 1/1;
+
+            width: 100%;
+            height: 100%;
+
+            padding: 0 15px;
+
+            border: 2px solid #c6c9d8;
+            border-radius: 6px;
+
+            cursor: pointer;
+            &__span {
+                width: 30px;
+            }
+            &__menu {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1;
+
+                color: #c6c9d8;
+            }
+            span {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #c6c9d8;
+                margin-bottom: 6px;
+                transition: 0.5s all;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__title_h1 {
+            font-size: 94px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 474px;
+        }
+    }
+    .services {
+        &__list {
+            margin-top: 78px;
+        }
+        &__item {
+            margin-bottom: 267px;
+            &-img {
+                width: 548px;
+            }
+            &-reverse {
+                .services {
+                    &__item {
+                        &-wrapper {
+                            padding-left: 54%;
+                            max-width: 95%;
+                        }
+                        &-block {
+                            margin-left: 14.7%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 450px 1px 443px;
+        }
+        &__form {
+            grid-template-columns: 1fr;
+            grid-template-rows: 51px 51px 51px 286px minmax(55px,auto);
+        }
+        &__email {
+            grid-row: 2/2;
+        }
+        &__triggers {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 55px);
+            justify-items: center;
+            button {
+                width: 232px;
+            }
+        }
+        &__policy {
+            text-align: center;
+        }
+
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        padding-left: 80px;
+        padding-right: 80px;
+        &__logo {
+            svg {
+                width: 200px;
+            }
+        }
+        &__menu {
+            column-gap: 20px;
+        }
+        &__title_h1 {
+            padding-top: 100px;
+    
+            font-size: 74px;
+        }
+        &__features {
+            margin-top: 100px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 288px 380px;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__subtitle {
+            margin-top: 35px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__logo {
+            svg {
+                width: 200px;
+            }
+        }
+        &__menu {
+            grid-template-columns: 52px 186px;
+            column-gap: 20px;
+            .hamburger {
+                padding: 0 10px;
+                &__menu {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+}
+
