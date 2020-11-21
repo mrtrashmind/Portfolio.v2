@@ -33,7 +33,6 @@
             padding: 54px 0 85px 43px;
 
             background: #FFFFFF;
-            border: 2px solid var(--f-color);
             border-radius: 10px;
         }
         &-title {
@@ -79,9 +78,7 @@
                         max-width: 97%;
                     }
                     &-img {
-                        position: absolute;
                         left: 0;
-                        top: 124px;
                     }
                 }
             }

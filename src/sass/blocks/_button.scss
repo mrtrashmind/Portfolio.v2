@@ -1,7 +1,7 @@
 .button {
     &__header {
         width: 186px;
-        height: 53px;
+        height: auto;
 
         font-size: 18px;
         font-weight: 600;
@@ -33,7 +33,7 @@
 
         font-weight: normal;
         font-size: 24px;
-        line-height: 24px;
+        line-height: 1;
         color: var(--f-color);
         &:hover {
             background: linear-gradient(161.79deg, #7154F8 -1.39%, #BA27A8 69.5%, #EE076E 151.31%);

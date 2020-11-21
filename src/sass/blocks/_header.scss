@@ -16,7 +16,11 @@
     &__menu {
         display: grid;
         grid-template-columns: 481px 186px;
+        grid-template-rows: minmax(auto, 53px);
         column-gap: 60px;
+        .close {
+            display: none;
+        }
         &-list {
             display: flex;
             justify-content: space-between;

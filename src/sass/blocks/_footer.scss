@@ -61,7 +61,7 @@
     }
     &__copyright {
         display: grid;
-        grid-template-columns: repeat(2, 400px);
+        grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
 
         margin-top: 40px;
