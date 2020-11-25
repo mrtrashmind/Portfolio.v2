@@ -1,19 +1,18 @@
-//Montserrat
+
 @font-face {
     font-family: 'Montserrat';
     font-display: swap;
     src: local('Montserrat'),
-        url('../fonts/Montserrat.ttf') format('ttf');
+        url('../fonts/Montserrat.ttf') format('truetype');
     font-weight: 900;
-    font-style: normal;
+    font-style: bold;
 }
 
-//Jost
 @font-face {
     font-family: 'Jost';
     font-display: swap;
     src: local('Jost-Light'),
-        url('../fonts/Jost-Light.ttf') format('ttf');
+        url('../fonts/Jost-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -21,7 +20,7 @@
     font-family: 'Jost';
     font-display: swap;
     src: local('Jost-Regular'),
-        url('../fonts/Jost-Regular.ttf') format('ttf');
+        url('../fonts/Jost-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -29,7 +28,7 @@
     font-family: 'Jost';
     font-display: swap;
     src: local('Jost-Medium'),
-        url('../fonts/Jost-Medium.ttf') format('ttf');
+        url('../fonts/Jost-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -37,7 +36,7 @@
     font-family: 'Jost';
     font-display: swap;
     src: local('Jost-SemiBold'),
-        url('../fonts/Jost-SemiBold.ttf') format('ttf');
+        url('../fonts/Jost-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }

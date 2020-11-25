@@ -21,29 +21,33 @@
         color: var(--text-color);
     }
     &__list {
-        margin-top: 109px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 40px;
+
+        margin-top: 79px;
     }
     &__item {
-        position: relative;
-        z-index: 1;
-        margin-bottom: 498px;
-        &-block {
-            max-width: 819px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
 
-            padding: 54px 0 85px 43px;
+        border-radius: 10px;
+        
+        &-block {
+            display: grid;
+            grid-auto-rows: auto;
+            row-gap: 20px;
+
+            padding: 35px 22px 40px 23px;
 
             background: #FFFFFF;
-            border-radius: 10px;
+            border-radius: 10px 10px 0 0;
         }
         &-title {
             font-weight: 500;
-            font-size: 34px;
+            font-size: 32px;
             line-height: 1;
-        }
-        &-wrapper {
-            max-width: 42%;
-
-            margin-top: 34px;
         }
         &-subtitle {
             font-weight: normal;
@@ -52,35 +56,40 @@
 
             color: var(--text-color);
         }
+        &-link {
+            justify-self: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            width: 240px;
+            height: 59px;
+    
+            border: 2px solid var(--f-color);
+            border-radius: 5px;
+    
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 1;
+            color: var(--f-color);
+
+            transition: .6s;
+            &:hover {
+                color: var(--f-color);
+
+                text-decoration: none;
+                transform: scale(1.07);
+            }
+        }    
         &-img {
-            width: 797px;
-            height: auto;
-            position: absolute;
-            right: 0;
-            top: 124px;
+            width: 393px;
+
+            
             img {
                 width: 100%;
-                height: 100%;
-            }
-        }
-        &-reverse {
-            .services {
-                &__item {
-                    &-block {
-                        margin-left: 35%;
-                    }
-                    &-title {
-                        text-align: right;
-                        padding-right: 7%;
-                    }
-                    &-wrapper {
-                        padding-left: 51%;
-                        max-width: 97%;
-                    }
-                    &-img {
-                        left: 0;
-                    }
-                }
+
+                border-radius: 0 0 10px 10px;
             }
         }
     }
