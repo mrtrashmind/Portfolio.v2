@@ -105,26 +105,9 @@
     }
     .services {
         &__list {
+            grid-template-columns: repeat(2, 1fr);
+
             margin-top: 78px;
-        }
-        &__item {
-            margin-bottom: 267px;
-            &-img {
-                width: 548px;
-            }
-            &-reverse {
-                .services {
-                    &__item {
-                        &-wrapper {
-                            padding-left: 54%;
-                            max-width: 95%;
-                        }
-                        &-block {
-                            margin-left: 14.7%;
-                        }
-                    }
-                }
-            }
         }
     }
     .contacts {
@@ -198,30 +181,8 @@
         &__descr {
             font-size: 20px;
         }
-        &__item {
-            margin-bottom: 130px;
-            &-block {
-                padding: 41px 0 50px 43px;
-
-                max-width: 572px;
-            }
-            &-title {
-                font-size: 30px;
-            }
-            &-subtitle {
-                font-size: 20px;
-            }
-            &-img {
-                top: 107px;
-
-                width: 408px;
-            }
-            .button__services {
-                width: 220px;
-
-                font-size: 21px;
-                line-height: 1;
-            }
+        &__list {
+            grid-template-columns: 1fr;
         }
     }
     .contacts {
@@ -299,49 +260,8 @@
         &__descr {
             padding: 0 0;
         }
-        &__item {
-            margin-bottom: 100%;
-            &-block {
-                padding-bottom: 41px;
-            }
-            &-title {
-                font-size: 26px;
-            }
-            &-subtitle {
-                font-size: 18px;
-            }
-            &-wrapper {
-                max-width: 100%;
-                margin-top: 26px;
-            }
-            .button__services {
-                margin-top: 0;
-            }
-            &-img {
-                top: 88%;
-                left: 50%;
-                transform: translateX(-50%);
-
-                width: 100%;
-            }
-            &-reverse {
-                .services {
-                    &__item {
-                        &-block {
-                            margin-left: 0;
-                        }
-                        &-title {
-                            text-align: unset;
-                        }
-                        &-wrapper {
-                            padding-left: 0;
-                        }
-                        &-img {
-                            left: 50%;
-                        }
-                    }
-                }
-            }
+        &__list {
+            grid-template-columns: 1fr;
         }
     }
 }

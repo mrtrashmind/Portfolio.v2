@@ -30,7 +30,7 @@
     <meta property="twitter:image" content="">
 
     <!--No index-->
-    <meta name="robots" content="noindex,nofollow">
+    <meta name="robots" content="index, follow">
 
     <!--Favicon-->
     <link type="image/x-icon" rel="shortcut icon" href="favicon/favicon.ico">
@@ -72,11 +72,11 @@
             <div class="header__menu">
                 <nav>
                     <ul class="header__menu-list">
-                        <li class="header__menu-item"><a href="#">Главная</a></li>
-                        <li class="header__menu-item"><a href="#">Услуги</a></li>
-                        <li class="header__menu-item"><a href="#">О нас</a></li>
-                        <li class="header__menu-item"><a href="#">Услуги</a></li>
-                        <li class="header__menu-item"><a href="#">Контакты</a></li>
+                        <li class="header__menu-item"><a href="#main" class="scroll">Главная</a></li>
+                        <li class="header__menu-item"><a href="#services" class="scroll">Услуги</a></li>
+                        <li class="header__menu-item"><a href="#about" class="scroll">О нас</a></li>
+                        <li class="header__menu-item"><a href="#faq" class="scroll">Вопросы</a></li>
+                        <li class="header__menu-item"><a href="#contacts" class="scroll">Контакты</a></li>
                     </ul>
                 </nav>
                 <button class="button button__header">Заказать бриф</button>
@@ -92,9 +92,9 @@
                 </div>
             </div>
         </div>
-        <div class="header__title">
+        <div class="header__title" id="main">
             <div class="container">
-                <h1 class="header__title_h1">
+                <h1 class="header__title_h1" for="main">
                     РАЗРАБОТКА<br>
                     ПРОДАЮЩИХ<br>
                     САЙТОВ
@@ -232,8 +232,8 @@
                         </div>
                         <div class="header__features-title">Разработка</div>
                         <div class="header__features-subtitle">
-                            Какой-то очень хороший продающий текст. И еще немного такого же текста. И еще. И еще. И еще.
-                            И еще. И еще. И еще. И еще. И еще. И еще.
+                            Пишем чистый и аккуратный код: верстка «не поедет», ваш сайт будет доступен 
+                            максимальному числу пользователей, адаптивен под все устройства и быстро загружаться.
                         </div>
                     </div>
                     <div class="header__features-item">
@@ -314,8 +314,8 @@
                         </div>
                         <div class="header__features-title">Поддержка</div>
                         <div class="header__features-subtitle">
-                            Какой-то очень хороший продающий текст. И еще немного такого же текста. И еще. И еще. И еще.
-                            И еще. И еще. И еще. И еще. И еще. И еще.
+                            Ведем свои проекты и после сдачи заказа. 
+                            Всегда на связи, консультируем и оказываем услуги по сопровождению веб-сайтов.
                         </div>
                     </div>
                     <div class="header__features-item">
@@ -400,15 +400,15 @@
                         </div>
                         <div class="header__features-title">Дизайн</div>
                         <div class="header__features-subtitle">
-                            Какой-то очень хороший продающий текст. И еще немного такого же текста. И еще. И еще. И еще.
-                            И еще. И еще. И еще. И еще. И еще. И еще.
+                            Создаём продающий дизайн сайтов с лёгкой навигацией для пользователя. Мы предлагаем уникальный дизайн для тех, 
+                            кто формирует свой бренд, и готовый шаблонный дизайн по бюджетной цене.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__img">
@@ -416,29 +416,32 @@
                 </div>
                 <div class="about__text">
                     <h2 class="about__title">О НАС</h2>
-                    <div class="about__subtitle">Очень хороший текст про нашу команду ответственных и знающих свое дело
-                        людей. Очень хороший текст про нашу команду ответственных и знающих свое дело людей. Очень
-                        хороший текст про нашу команду ответственных и знающих свое дело людей. Очень хороший текст про
-                        нашу команду ответственных и знающих свое дело людей. Очень хороший текст про нашу команду
-                        ответственных и знающих свое дело людей. </div>
+                    <p class="about__subtitle">В современном мире мало иметь просто красивый сайт. Если ваш веб-ресурс грузится дольше 3 секунд – вы уже теряете 50% своих потенциальных клиентов. Поэтому моей задачей, как разработчика, является создание качественной верстки, обеспечивающей легкий доступ к сайтам и простоту их использования, а также верхние строчки в выдаче поисковиков.<br>
+                        <br>
+                        Для быстрого запуска высококачественных проектов важна работа целой команды специалистов с узким профилем. В RAFstudio каждый занят своим делом, нет многостаночников. Поэтому я могу гарантировать, что дизайн вашего сайта будет продающим, тексты – привлекающими внимание, а код будет написан с использованием актуальных технологий.<br>
+                        <br>
+                        Мы работаем по договору, соблюдаем все свои обязательства и выполняем заказы точно в срок.
+                    </p>
+                    <p class="about__subtitle">
+                        Со-основатель RAFSTUDIO,<br>
+                        Роман Рафиков.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2 class="services__title">УСЛУГИ</h2>
-            <div class="services__descr">Какой-то очень хороший текст, который я пока не могу придумать. Пусть будет
-                здесь. Пусть будет здесь. Пусть будет здесь. Пусть будет здесь. Пусть будет здесь. Пусть будет здесь.
-                Пусть будет здесь.</div>
+            <div class="services__descr">От верстки до SEO. Оказываем качественные услуги по созданию
+                сайтов для вашего бизнеса.
+            </div>
             <div class="services__list">
                 <div class="services__item">
                     <div class="services__item-block">
                         <h3 class="services__item-title">Landing page</h3>
-                        <p class="services__item-subtitle">Верстка адаптирована под все
-                            устройства. Сайт одинаково
-                            хорошо работает во всех
-                            браузерах
+                        <p class="services__item-subtitle">Продающий сайт-одностраничник, созданный для продвижения конкретного 
+                            товара или услуги. Структура лендинга позволяет добиться большей конверсии посетителей в покупателей.
                         </p>
                         <a href="landing.html" class="services__item-link">ПЕРЕЙТИ</a>
                     </div>
@@ -449,10 +452,8 @@
                 <div class="services__item services__item-reverse">
                     <div class="services__item-block">
                         <h3 class="services__item-title">Сайт-визитка</h3>
-                        <p class="services__item-subtitle">Верстка адаптирована под все
-                            устройства. Сайт одинаково
-                            хорошо работает во всех
-                            браузерах
+                        <p class="services__item-subtitle">Веб-ресурс, созданный для презентации компании либо отдельной персоны. Основная цель – заинтересовать к сотрудничеству потенциальных клиентов и партнеров. 
+                            Сайт лаконично информирует о деятельности, товарах и услугах и прочем без яркого акцента на продажу.
                         </p>
                         <a href="promo.html" class="services__item-link">ПЕРЕЙТИ</a>
                     </div>
@@ -463,10 +464,8 @@
                 <div class="services__item">
                     <div class="services__item-block">
                         <h3 class="services__item-title">Многостраничный сайт</h3>
-                        <p class="services__item-subtitle">Верстка адаптирована под все
-                            устройства. Сайт одинаково
-                            хорошо работает во всех
-                            браузерах
+                        <p class="services__item-subtitle">Сайт состоит из множества страниц и служит для представления услуг или продукции, либо обширно рассказывает 
+                            о деятельности компании. Мы разрабатываем корпоративные сайты и сайты-каталоги.
                         </p>
                         <a href="corporate.html" class="services__item-link">ПЕРЕЙТИ</a>
                     </div>
@@ -477,10 +476,8 @@
                 <div class="services__item services__item-reverse">
                     <div class="services__item-block">
                         <h3 class="services__item-title services__item-title">Верстка дизайн-макетов</h3>
-                        <p class="services__item-subtitle">Верстка адаптирована под все
-                            устройства. Сайт одинаково
-                            хорошо работает во всех
-                            браузерах
+                        <p class="services__item-subtitle">Превращаем ваш дизайн-макет или приобретённый шаблон в готовый сайт: пишем адаптивную верстку, 
+                            при необходимости – наполняем контентом и переносим на новый домен.
                         </p>
                         <a href="corporate.html" class="services__item-link">ПЕРЕЙТИ</a>
                     </div>
@@ -491,10 +488,8 @@
                 <div class="services__item">
                     <div class="services__item-block">
                         <h3 class="services__item-title">Сопровождение и доработка</h3>
-                        <p class="services__item-subtitle">Верстка адаптирована под все
-                            устройства. Сайт одинаково
-                            хорошо работает во всех
-                            браузерах
+                        <p class="services__item-subtitle">Для владельцев готовых веб-ресурсов: расширяем функционал, исправляем ошибки, обновляем контент и дизайн. 
+                            Поддерживаем ваш сайт в актуальном состоянии с учетом постоянно меняющихся технологий.
                         </p>
                         <a href="corporate.html" class="services__item-link">ПЕРЕЙТИ</a>
                     </div>
@@ -505,10 +500,8 @@
                 <div class="services__item services__item-reverse">
                     <div class="services__item-block">
                         <h3 class="services__item-title">Адаптация под мобильные устройства</h3>
-                        <p class="services__item-subtitle">Верстка адаптирована под все
-                            устройства. Сайт одинаково
-                            хорошо работает во всех
-                            браузерах
+                        <p class="services__item-subtitle">Создаем правильное отображение вашего сайта на десктопных и мобильных устройствах. 
+                            Обеспечиваем быструю загрузку сайта в браузерах.
                         </p>
                         <a href="corporate.html" class="services__item-link">ПЕРЕЙТИ</a>
                     </div>
@@ -519,7 +512,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <h2 class="contacts__title">ЕСТЬ ВОПРОСЫ? ПИШИТЕ!</h2>
             <div class="contacts__descr">Мы свяжемся с вами, ответим на интересующие вопросы и сориентируем по срокам и
@@ -607,7 +600,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__logo">

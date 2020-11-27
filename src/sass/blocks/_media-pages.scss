@@ -1,0 +1,179 @@
+@media (max-width: 1200px) {
+    .page-title {
+        padding-top: 100px;
+        font-size: 66px
+    }
+
+    .features {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+        &__text {
+            padding-top: 0;
+        }
+    }
+    
+    .prices {
+        &__wrapper {
+            grid-template-columns: repeat(3, 296px);
+        }
+        &__title-card {
+            font-size: 43px;
+        }
+        &__cost {
+            font-size: 47px;
+        }
+        &__text {
+            font-size: 22px;
+        }
+        &__list {
+            font-size: 22px;
+            li {
+                &:before {
+                    width: 12px;
+                    height: 19px;
+                }
+            }
+        }
+        &__footer {
+            &-text {
+                font-size: 18px;
+            }
+        }
+
+        &__corporate {
+            &-wrapper {
+                grid-template-columns: 1fr 504px;
+            }
+            &-descr {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .page-title {
+        padding-top: 100px;
+        font-size: 50px;
+    }
+
+    .features {
+        &__title {
+            font-size: 40px;
+        }
+        &__descr {
+            margin-top: 17px;
+
+            font-size: 20px;
+        }
+        &__list {
+            grid-template-columns: repeat(2,360px);
+        }
+        &__item {
+            &-title {
+                font-size: 30px;
+            }
+            &-descr {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .prices {
+        padding: 50px 0;
+        &__title {
+            font-size: 40px;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(3, 224px);
+
+            margin-top: 50px;
+        }
+        &__item {
+            &-wrapper {
+                padding: 29px 24px 38px 24px;
+            }
+        }
+        &__title-card {
+            font-size: 30px;
+        }
+        &__cost {
+            font-size: 32px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__list {
+            font-size: 18px;
+        }
+        &__footer {
+            font-size: 16px;
+        }
+        &__corporate {
+            &-wrapper {
+                grid-template-columns: 1fr 364px;
+            }
+            &-text {
+                row-gap: 10px;
+            }
+            &-descr {
+                font-size: 18px;
+            }
+            &-img {
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        .page-title {
+            font-size: 39px;
+        }
+    }
+    .page-descr {
+        font-size: 18px;
+    }
+    .features {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+    .prices {
+        &__wrapper {
+            grid-template-columns: 320px;
+            justify-content: center;
+            row-gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding-bottom: 60px;
+        .page-title {
+            padding-top: 60px;
+            
+            font-size: 23px;
+        }
+    }
+    .page-descr {
+        font-size: 16px;
+    }
+    .features {
+        &__item-title {
+            font-size: 26px;
+        }
+    }
+    .prices {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+    }
+}
