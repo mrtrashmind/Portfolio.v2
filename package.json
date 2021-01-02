@@ -23,7 +23,8 @@
     "last 1 version",
     "> 1%",
     "maintained node versions",
-    "not dead"
+    "not dead",
+    "last 1 ie version"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -185,6 +185,12 @@
             grid-template-columns: 1fr;
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+    }
     .contacts {
         padding-bottom: 65px;
         &__title {

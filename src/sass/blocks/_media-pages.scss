@@ -42,9 +42,9 @@
             }
         }
 
-        &__corporate {
+        &__corporate, &__support {
             &-wrapper {
-                grid-template-columns: 1fr 504px;
+                grid-template-columns: 1fr;
             }
             &-descr {
                 font-size: 20px;
@@ -111,12 +111,19 @@
         &__footer {
             font-size: 16px;
         }
-        &__corporate {
+
+        &__corporate, &__support {
             &-wrapper {
-                grid-template-columns: 1fr 364px;
+                grid-template-columns: 1fr;
             }
             &-text {
                 row-gap: 10px;
+            }
+            &-item {
+                grid-template-columns: 1fr 322px;
+            }
+            &-title {
+                font-size: 26px;
             }
             &-descr {
                 font-size: 18px;
@@ -149,6 +156,22 @@
             grid-template-columns: 320px;
             justify-content: center;
             row-gap: 30px;
+        }
+
+        &__corporate, &__support {
+            &-wrapper {
+                grid-template-columns: 1fr;
+            }
+            &-item {
+                grid-template-columns: 1fr;
+            }
+            &-link {
+                margin-top: 30px;
+            }
+            &-img {
+                grid-column: unset;
+                grid-row: 2/3;
+            }
         }
     }
 }
